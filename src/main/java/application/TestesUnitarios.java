@@ -18,9 +18,7 @@ public class TestesUnitarios {
     public void inicializa() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-
         pages = new Pages(driver);
-
         pages.acessSite();
     }
 
@@ -143,17 +141,12 @@ public class TestesUnitarios {
         pages.setCorrectLogin();
         pages.setCorrectPassword();
         pages.clickSubmit();
-
         pages.clickPim();
-
         pages.clickEmployeeList();
-
         pages.clickResetFilter();
         pages.setRegisteredName("Beltrano");
-
         Thread.sleep(900);
         pages.clickSearchRegistered();
-
         Thread.sleep(900);
         pages.clickDeletRegister();
         pages.clickConfirmDeletRegister();
