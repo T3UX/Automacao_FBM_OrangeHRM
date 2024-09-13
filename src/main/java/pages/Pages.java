@@ -148,7 +148,6 @@ public class Pages {
     }
 
     /********* Valida Mensagem Exibida em Tela ************/
-
     public void deletionMessageVerify(){
         dsl.encontraMensagem("//*[@id='oxd-toaster_1']");
     }
