@@ -24,9 +24,7 @@ public class DSL {
         driver.quit();
     }
 
-
     /********* TextField e TextArea ************/
-
     public void escreverXpath(String xpath, String texto){
         driver.findElement(By.xpath(xpath)).clear();
         driver.findElement(By.xpath(xpath)).sendKeys(texto);
@@ -37,16 +35,8 @@ public class DSL {
     }
 
     /********* Botao ************/
-
     public void clicarBotaoComXpath(String xpath) {
         driver.findElement(By.xpath(xpath)).click();
-    }
-
-
-    /********* Combo ************/
-    public void rolarPagina(){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
 
     /********* Aguarda Pagina ************/
